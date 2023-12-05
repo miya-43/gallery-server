@@ -26,23 +26,6 @@ function App() {
         <Gallery theme={theme} direction={direction}/>
         <CinemaHall theme={theme} />
       </main>
-
-      {isFooterVisible && <footer className="App-footer">
-        <div className="toggle-wrapper">
-          <span>Theme</span>
-
-          <Toggle
-            className="toggle"
-            defaultChecked={false}
-            icons={false}
-            onChange={toggleTheme}
-          />
-        </div>
-
-        <p className="tips">
-          Gallery Server
-        </p>
-      </footer>}
     </div>
   );
 }
